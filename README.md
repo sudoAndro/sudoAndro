@@ -1,16 +1,151 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**sudoAndro/sudoAndro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```
+███████╗██╗   ██╗██████╗  ██████╗  █████╗ ███╗   ██╗██████╗ ██████╗  ██████╗
+██╔════╝██║   ██║██╔══██╗██╔═══██╗██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔═══██╗
+███████╗██║   ██║██║  ██║██║   ██║███████║██╔██╗ ██║██║  ██║██████╔╝██║   ██║
+╚════██║██║   ██║██║  ██║██║   ██║██╔══██║██║╚██╗██║██║  ██║██╔══██╗██║   ██║
+███████║╚██████╔╝██████╔╝╚██████╔╝██║  ██║██║ ╚████║██████╔╝██║  ██║╚██████╔╝
+╚══════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
+```
 
-Here are some ideas to get you started:
+### `whoami`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</div>
+
+```bash
+$ cat /etc/profile.d/andro.sh
+
+NAME="Andrijan Tadic"
+ALIAS="sudoAndro"
+LOCATION="Solothurn, Switzerland 🇨🇭"
+BACKGROUND="20 years CNC Machinist → IT & Cybersecurity"
+TRAINING="ICT Supporter SIZ (Power-User) – in progress"
+GOAL="Protect people through cybersecurity"
+STATUS="Learning every day | Breaking things | Fixing them better"
+```
+
+---
+
+## 🔐 Focus Areas
+
+```
+[■■■■■■■■░░]  Linux Administration
+[■■■■■■░░░░]  Network Security
+[■■■■■░░░░░]  Homelab & Virtualization
+[■■■░░░░░░░]  Cybersecurity (in progress)
+```
+
+---
+
+## 🛠️ Tech Stack
+
+**Operating Systems**
+
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+
+**Virtualization & Infrastructure**
+
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
+![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?style=flat-square&logo=opnsense&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+
+**Networking & Security**
+
+![Pi-hole](https://img.shields.io/badge/Pi--hole-96060C?style=flat-square&logo=pihole&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![NordVPN](https://img.shields.io/badge/NordVPN-4687FF?style=flat-square&logo=nordvpn&logoColor=white)
+![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
+![SSH](https://img.shields.io/badge/SSH-4D4D4D?style=flat-square&logo=gnubash&logoColor=white)
+
+**Services & Tools**
+
+![Samba](https://img.shields.io/badge/Samba_NAS-1C1C1C?style=flat-square&logo=linux&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+
+---
+
+## 🏗️ Homelab
+
+```
+                    ┌─────────────────────────────┐
+                    │         INTERNET             │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │    OPNsense Firewall/Router  │
+                    │     (Security Gateway)       │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │       Proxmox Host           │
+                    │  ┌─────────┐  ┌──────────┐  │
+                    │  │ Debian  │  │  Kali    │  │
+                    │  │   VM    │  │  Linux   │  │
+                    │  └─────────┘  └──────────┘  │
+                    └──────────────┬──────────────┘
+                                   │
+               ┌───────────────────┼──────────────────┐
+               │                   │                  │
+  ┌────────────▼───┐    ┌──────────▼──────┐   ┌──────▼──────┐
+  │  Raspberry Pi 1│    │  Raspberry Pi 2 │   │  Cloudflare │
+  │   Pi-hole DNS  │    │   Samba NAS     │   │   Tunnel    │
+  └────────────────┘    └─────────────────┘   └─────────────┘
+```
+
+---
+
+## 📂 Featured Projects
+
+| Repository | Description | Status |
+|---|---|---|
+| [linux-secure-setup](https://github.com/sudoAndro/linux-secure-setup) | Hardening scripts for Debian/Ubuntu | 🟢 Active |
+| [samba-nas-setup](https://github.com/sudoAndro/samba-nas-setup) | Samba NAS with Cloudflare Tunnel | 🟢 Active |
+| [andro-lab](https://github.com/sudoAndro/andro-lab) | Multi-Layer Cybersecurity Homelab | 🟡 In Progress |
+| [proxmox-scripts](https://github.com/sudoAndro/proxmox-scripts) | Automation & setup scripts for Proxmox | 🟢 Active |
+| [linux-starter-kit](https://github.com/sudoAndro/linux-starter-kit) | Aliases, tuning & tips for beginners | 🟢 Active |
+
+---
+
+## 🎯 Roadmap 2025–2026
+
+- [x] Proxmox Homelab aufgebaut
+- [x] OPNsense Firewall konfiguriert
+- [x] Raspberry Pi – Pi-hole & Samba NAS
+- [x] Cloudflare Tunnel eingerichtet
+- [ ] ICT Supporter SIZ abschliessen
+- [ ] CompTIA Security+ vorbereiten
+- [ ] Erstes CTF (Capture The Flag) abschliessen
+- [ ] Cybersecurity Einstiegsposition finden
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![sudoAndro's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sudoAndro&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sudoAndro&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff)
+
+</div>
+
+---
+
+## 🌐 Connect
+
+[![Website](https://img.shields.io/badge/Website-andrijantadic.ch-0d1117?style=flat-square&logo=firefox&logoColor=58a6ff)](https://www.andrijantadic.ch)
+[![GitHub](https://img.shields.io/badge/GitHub-sudoAndro-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/sudoAndro)
+
+---
+
+<div align="center">
+
+*"The quieter you become, the more you are able to hear."* — Kali Linux
+
+![Visitor Count](https://komarev.com/ghpvc/?username=sudoAndro&color=58a6ff&style=flat-square&label=Profile+Views)
+
+</div>
