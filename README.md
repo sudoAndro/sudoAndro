@@ -20,7 +20,7 @@ NAME="Andrijan Tadic"
 ALIAS="sudoAndro"
 LOCATION="Solothurn, Switzerland 🇨🇭"
 BACKGROUND="20 years CNC Machinist → IT & Cybersecurity"
-TRAINING="ICT Supporter SIZ (Power-User) – in progress"
+TRAINING="ICT-Power-User SIZ & Professional SIZ (System & Network) – in progress"
 GOAL="Protect people through cybersecurity"
 STATUS="Learning every day | Breaking things | Fixing them better"
 ```
@@ -30,9 +30,11 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 ## 🔐 Focus Areas
 
 ```
+[■■■■■■■■■░]  Windows Administration
 [■■■■■■■■░░]  Linux Administration
 [■■■■■■░░░░]  Network Security
 [■■■■■░░░░░]  Homelab & Virtualization
+[■■■░░░░░░░]  Active Directory (in training)
 [■■■░░░░░░░]  Cybersecurity (in progress)
 ```
 
@@ -42,9 +44,17 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 **Operating Systems**
 
+![Windows 11](https://img.shields.io/badge/Windows_11-0078D4?style=flat-square&logo=windows11&logoColor=white)
+![Windows 10](https://img.shields.io/badge/Windows_10-0078D4?style=flat-square&logo=windows&logoColor=white)
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+
+**Windows & Active Directory**
+
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?style=flat-square&logo=windows&logoColor=white)
 
 **Virtualization & Infrastructure**
 
@@ -116,7 +126,9 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 - [x] OPNsense Firewall konfiguriert
 - [x] Raspberry Pi – Pi-hole & Samba NAS
 - [x] Cloudflare Tunnel eingerichtet
+- [ ] Active Directory – Windows Server (in Ausbildung)
 - [ ] ICT Supporter SIZ abschliessen
+- [ ] ICT Professional SIZ abschliessen
 - [ ] CompTIA Security+ vorbereiten
 - [ ] Erstes CTF (Capture The Flag) abschliessen
 - [ ] Cybersecurity Einstiegsposition finden
