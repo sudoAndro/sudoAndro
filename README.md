@@ -82,16 +82,16 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 ```
                     ┌─────────────────────────────┐
-                    │         INTERNET             │
+                    │         INTERNET            │
                     └──────────────┬──────────────┘
                                    │
                     ┌──────────────▼──────────────┐
-                    │    OPNsense Firewall/Router  │
-                    │     (Security Gateway)       │
+                    │    OPNsense Firewall/Router │
+                    │     (Security Gateway)      │
                     └──────────────┬──────────────┘
                                    │
                     ┌──────────────▼──────────────┐
-                    │       Proxmox Host           │
+                    │       Proxmox Host          │
                     │  ┌─────────┐  ┌──────────┐  │
                     │  │ Debian  │  │  Kali    │  │
                     │  │   VM    │  │  Linux   │  │
