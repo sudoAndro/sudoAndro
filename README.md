@@ -117,6 +117,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 | [andro-lab](https://github.com/sudoAndro/andro-lab) | Multi-Layer Cybersecurity Homelab | 🟡 In Progress |
 | [proxmox-scripts](https://github.com/sudoAndro/proxmox-scripts) | Automation & setup scripts for Proxmox | 🟢 Active |
 | [linux-starter-kit](https://github.com/sudoAndro/linux-starter-kit) | Aliases, tuning & tips for beginners | 🟢 Active |
+| [windows-starter-kit](https://github.com/sudoAndro/windows-starter-kit) | Automated PowerShell 7 + Terminal setup | 🟢 Active |
 
 ---
 
