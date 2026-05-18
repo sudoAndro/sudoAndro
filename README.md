@@ -118,7 +118,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 | [proxmox-scripts](https://github.com/sudoAndro/proxmox-scripts) | Automation & setup scripts for Proxmox | 🟢 Active |
 | [linux-starter-kit](https://github.com/sudoAndro/linux-starter-kit) | Aliases, tuning & tips for beginners | 🟢 Active |
 | [windows-starter-kit](https://github.com/sudoAndro/windows-starter-kit) | Automated PowerShell 7 + Terminal setup | 🟢 Active |
-
+| [active-directory-lab](https://github.com/sudoAndro/active-directory-lab) | Active Directory Lab – Domain Controller, GPOs, DNS Filtering & Logging | 🟢 Active |
 ---
 
 ## 🎯 Roadmap 2025–2026
@@ -127,7 +127,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 - [x] OPNsense Firewall konfiguriert
 - [x] Raspberry Pi – Pi-hole & Samba NAS
 - [x] Cloudflare Tunnel eingerichtet
-- [ ] Active Directory – Windows Server (in Ausbildung)
+- [x] Active Directory – Windows Server (in Ausbildung)
 - [ ] ICT Supporter SIZ abschliessen
 - [ ] ICT Professional SIZ abschliessen
 - [ ] CompTIA Security+ vorbereiten
