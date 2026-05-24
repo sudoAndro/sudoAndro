@@ -30,7 +30,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 ---
 
-## 🔐 Focus Areas
+## Focus Areas
 
 ```
 [■■■■■■■■■░]  Windows Administration
@@ -38,12 +38,13 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 [■■■■■■░░░░]  Network Security
 [■■■■■░░░░░]  Homelab & Virtualization
 [■■■░░░░░░░]  Active Directory (in training)
+[■■■░░░░░░░]  Secure Application Development (Android)
 [■■■░░░░░░░]  Cybersecurity (in progress)
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Operating Systems**
 
@@ -79,9 +80,15 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
+**Mobile Development**
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=androidstudio&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
+
 ---
 
-## 🏗️ Homelab
+## Homelab
 
 ```
                     ┌─────────────────────────────┐
@@ -111,7 +118,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 ---
 
-## 📂 Featured Projects
+## Featured Projects
 
 | Repository | Description | Status |
 |---|---|---|
@@ -122,9 +129,10 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 | [linux-starter-kit](https://github.com/sudoAndro/linux-starter-kit) | Aliases, tuning & tips for beginners | 🟢 Active |
 | [windows-starter-kit](https://github.com/sudoAndro/windows-starter-kit) | Automated PowerShell 7 + Terminal setup | 🟢 Active |
 | [active-directory-lab](https://github.com/sudoAndro/active-directory-lab) | Active Directory Lab – Domain Controller, GPOs, DNS Filtering & Logging | 🟢 Active |
+| [VaultCalculator](https://github.com/sudoAndro/VaultCalculator) | A fully functional calculator for Android with a private file vault | 🟢 Active |
 ---
 
-## 🎯 Roadmap 2025–2026
+## Roadmap 2025–2026
 
 - [x] Proxmox Homelab aufgebaut
 - [x] OPNsense Firewall konfiguriert
@@ -139,7 +147,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <div align="center">
 
@@ -151,7 +159,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 ---
 
-## 🌐 Connect
+## Connect
 
 [![Website](https://img.shields.io/badge/Website-andrijantadic.ch-0d1117?style=flat-square&logo=firefox&logoColor=58a6ff)](https://www.andrijantadic.ch)
 [![GitHub](https://img.shields.io/badge/GitHub-sudoAndro-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/sudoAndro)
