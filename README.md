@@ -23,19 +23,19 @@ graph TD
     classDef peripheral fill:#00e676,stroke:#00c853,stroke-width:2px,color:#000;
 
     %% Nodes
-    WAN[DAS INTERNET - Die ungesicherte Zone] :::wan
-    FW[OPNsense Security Gateway - Der eiserne Tuersteher] :::core
+    WAN["DAS INTERNET - Die ungesicherte Zone"]:::wan
+    FW["OPNsense Security Gateway - Der eiserne Tuersteher"]:::core
     
-    subgraph PVE [PROXMOX VE HYPERVISOR - Virtualisierungs-Kern]
-        VM1[Debian VM - Docker und Core Services]
-        VM2[Kali Linux - Die Angriffs und Analyseplattform]
+    subgraph PVE ["PROXMOX VE HYPERVISOR - Virtualisierungs-Kern"]
+        VM1["Debian VM - Docker und Core Services"]
+        VM2["Kali Linux - Die Angriffs und Analyseplattform"]
     end
     class PVE hyper;
 
-    subgraph HW [BARE-METAL und COMPLIANCE]
-        Pi1[Pi-hole - DNS Sinkhole und Telemetrie-Filter]
-        Pi2[Raspberry Pi - Lokales Samba NAS fuer Backups]
-        CF[Cloudflare Tunnel - Sicherer WAN-Relay ohne offene Ports]
+    subgraph HW ["BARE-METAL und COMPLIANCE"]
+        Pi1["Pi-hole - DNS Sinkhole und Telemetrie-Filter"]
+        Pi2["Raspberry Pi - Lokales Samba NAS fuer Backups"]
+        CF["Cloudflare Tunnel - Sicherer WAN-Relay ohne offene Ports"]
     end
     class HW peripheral;
 
@@ -43,6 +43,7 @@ graph TD
     WAN --> FW
     FW --> PVE
     FW --> HW
+    ```
 
     
 ## 🛠️ Mein Arsenal & Praktische Skills
