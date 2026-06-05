@@ -5,6 +5,7 @@
 ---
 
 ## 🪓 Meine Philosophie: Keine Theorie. Reine Praxis.
+
 Ich bin kein typischer IT-Einsteiger. Ich bin ein Quereinsteiger mit 40+, der den Mut hatte, das Feld komplett neu aufzurollen. In meinem Lab wird nicht kopiert – hier wird verstanden, zerlegt und gehärtet.
 
 * **Mentalität:** 100% lösungsorientiert. Wenn ein System brennt oder eine Schleife blockiert, bleibe ich am Ball, bis der Fehler eliminiert ist.
@@ -43,25 +44,3 @@ graph TD
     WAN --> FW
     FW --> PVE
     FW --> HW
-    ```
-
-    
-## 🛠️ Mein Arsenal & Praktische Skills
-
-| Bereich | Technologie / Werkzeuge | Einsatzzweck im Lab |
-| :--- | :--- | :--- |
-| **Firewall & Netzwerksicherheit** | OPNsense, VLAN-Trennung, NAT | Komplette Abschottung von unsicheren IoT-Geräten (z.B. IP-Kameras) vom internen Netz. |
-| **Sicherer Fernzugriff** | Tailscale (Subnet Routing), NetBird | Verschlüsseltes Mesh-Netzwerk für standortunabhängigen Zugriff direkt auf Host-Ebenen. |
-| **Virtualisierung** | Proxmox VE, Debian Linux | Aufbau isolierter Testumgebungen zur Analyse von Angriffsvektoren. |
-| **Offensive Security** | Kali Linux, Nmap, Hydra, Wireshark | Durchführung kontrollierter Reconnaissance-Scans und Brute-Force-Stresstests gegen eigene Infrastruktur. |
-| **Automatisierung & Monitoring** | Monit, Python, Bash, Brevo SMTP | Proaktive Systemüberwachung mit automatisierten Alarm-Schleifen bei Host-Ausfällen. |
-
----
-
-## 🚀 Aktuelle Hardening-Projekte
-1. **IoT Isolation:** Komplette Einkapselung von Consumer-Webcams in separaten Netzwerksegmenten, validiert durch automatisierte Penetration-Scans.
-2. **Alerting System:** Behebung kritischer Monitoring-Deadlocks im Monit-Unterbau der OPNsense, gekoppelt an einen verifizierten Cloudflare/Brevo-Relay.
-3. **Workspace Customization:** Aufbau einer extrem schnellen CLI-Schaltzentrale mittels PowerShell 7, XPipe und maßgeschneiderten SSH-Key-Authentifizierungen.
-
----
-**"Ich habe langsam gestartet – aber ich höre nicht auf."**
