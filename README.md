@@ -90,30 +90,33 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 ## Homelab
 
-```
-                    ┌─────────────────────────────┐
-                    │         INTERNET            │
-                    └──────────────┬──────────────┘
-                                   │
-                    ┌──────────────▼──────────────┐
-                    │    OPNsense Firewall/Router │
-                    │     (Security Gateway)      │
-                    └──────────────┬──────────────┘
-                                   │
-                    ┌──────────────▼──────────────┐
-                    │       Proxmox Host          │
-                    │  ┌─────────┐  ┌──────────┐  │
-                    │  │ Debian  │  │  Kali    │  │
-                    │  │   VM    │  │  Linux   │  │
-                    │  └─────────┘  └──────────┘  │
-                    └──────────────┬──────────────┘
-                                   │
-               ┌───────────────────┼──────────────────┐
-               │                   │                  │
-  ┌────────────▼───┐    ┌──────────▼──────┐   ┌──────▼──────┐
-  │  Raspberry Pi 1│    │  Raspberry Pi 2 │   │  Cloudflare │
-  │   Pi-hole DNS  │    │   Samba NAS     │   │   Tunnel    │
-  └────────────────┘    └─────────────────┘   └─────────────┘
+```mermaid
+graph TD
+    Internet["🌐 INTERNET"]
+    OPNsense["🔥 OPNsense Firewall/Router<br/>(Security Gateway)"]
+    Proxmox["🖥️ Proxmox Host"]
+    Debian["🐧 Debian VM"]
+    Kali["⚔️ Kali Linux VM"]
+    RasPi1["🍓 Raspberry Pi 1<br/>Pi-hole DNS"]
+    RasPi2["🍓 Raspberry Pi 2<br/>Samba NAS"]
+    Cloudflare["☁️ Cloudflare Tunnel"]
+    
+    Internet --> OPNsense
+    OPNsense --> Proxmox
+    Proxmox --> Debian
+    Proxmox --> Kali
+    Proxmox --> RasPi1
+    Proxmox --> RasPi2
+    Proxmox --> Cloudflare
+    
+    style Internet fill:#FF6B6B,stroke:#C92A2A,color:#fff
+    style OPNsense fill:#FF922B,stroke:#D9480F,color:#fff
+    style Proxmox fill:#4C6EF5,stroke:#364FC7,color:#fff
+    style Debian fill:#A61E4D,stroke:#7D1635,color:#fff
+    style Kali fill:#557C94,stroke:#2D3A47,color:#fff
+    style RasPi1 fill:#A22846,stroke:#6D1938,color:#fff
+    style RasPi2 fill:#A22846,stroke:#6D1938,color:#fff
+    style Cloudflare fill:#F38020,stroke:#D97706,color:#fff
 ```
 
 ---
