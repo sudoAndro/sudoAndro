@@ -15,19 +15,19 @@ graph TD
     classDef node fill:#4caf50,stroke:#388e3c,stroke-width:2px,color:#fff;
 
     %% Nodes
-    WAN[🌐 INTERNET] :::internet
-    FW[🔒 OPNsense Firewall / Security Gateway] :::security
+    WAN["🌐 INTERNET"] :::internet
+    FW["🔒 OPNsense Firewall / Security Gateway"] :::security
     
-    subgraph PVE [💻 Proxmox VE Hypervisor]
-        VM1[🐧 Debian VM]
-        VM2[🐉 Kali Linux]
+    subgraph PVE ["💻 Proxmox VE Hypervisor"]
+        VM1["🐧 Debian VM"]
+        VM2["🐉 Kali Linux"]
     end
     class PVE hypervisor;
 
-    subgraph HW [🍓 Bare-Metal / Peripherie]
-        Pi1[🛑 Raspberry Pi 1: Pi-hole DNS]
-        Pi2[📂 Raspberry Pi 2: Samba NAS]
-        CF[☁️ Cloudflare Tunnel Relay]
+    subgraph HW ["🍓 Bare-Metal / Peripherie"]
+        Pi1["🛑 Raspberry Pi 1: Pi-hole DNS"]
+        Pi2["📂 Raspberry Pi 2: Samba NAS"]
+        CF["☁️ Cloudflare Tunnel Relay"]
     end
     class HW node;
 
