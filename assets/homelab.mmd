@@ -1,0 +1,42 @@
+flowchart TB
+  %% Internet and VPN
+  NET(["🌐 Internet"]) --> NordVPN(["NordVPN<br/>(WireGuard)"])
+
+  %% OPNsense box
+  NordVPN --> OPNsense[["🔥 OPNsense<br/>(WAN: 192.168.X.4<br/>LAN: 192.168.Y.1)"]]
+  subgraph OPNRoles["OPNsense Roles"]
+    direction TB
+    OPNText["• WAN gateway (WireGuard)<br/>• Killswitch (block non-VPN)<br/>• Stateful firewall<br/>• Tailscale subnet router & exit node<br/>• DNS forwarder → Pi-hole<br/>• Kea DHCP server"]
+  end
+  OPNsense --> OPNRoles
+
+  %% LAN and services
+  OPNsense --> LAN(["Internal LAN<br/>192.168.Y.0/24"])
+  LAN --> PiHole(["🍓 Pi-hole<br/>DNS filter + Cloudflare/Quad9"])
+  LAN --> Vault(["🔐 Vaultwarden<br/>Docker + Caddy TLS + Crowdsec"])
+  LAN --> VMs(["🖥️ Other VMs (Proxmox)"])
+
+  %% Tailscale mesh (overlay)
+  classDef tailscale fill:#0f172a,stroke:#00b4d8,color:#cde;
+  TMesh(["🌐 Tailscale Mesh<br/>(100.x.x.x)"])
+  class TMesh tailscale
+  OPNsense -.-> TMesh
+  Vault -.-> TMesh
+  VMs -.-> TMesh
+  Phone(["📱 Phone (Android)"]) -.-> TMesh
+  Laptops(["💻 Laptops"]) -.-> TMesh
+
+  %% anchors
+  Proxmox(["🖥️ Proxmox host"]) --> VMs
+  Proxmox -.-> TMesh
+
+  %% clickable links (may be supported in some renderers)
+  click Vault "https://github.com/sudoAndro/VaultCalculator" "Vaultwarden repo"
+  click PiHole "https://github.com/sudoAndro/samba-nas-setup" "Pi-hole / NAS repo"
+
+  style NET fill:#ff6b6b,stroke:#c92a2a,color:#fff
+  style NordVPN fill:#1e40af,stroke:#1e3a8a,color:#fff
+  style OPNsense fill:#0b1220,stroke:#58a6ff,color:#e6f0ff
+  style LAN fill:#071328,stroke:#334155,color:#cbd5e1
+  style PiHole fill:#a61e4d,stroke:#7d1635,color:#fff
+  style Vault fill:#0f766e,stroke:#0f9d8e,color:#fff

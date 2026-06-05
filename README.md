@@ -90,33 +90,23 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 ## Homelab
 
-```mermaid
-graph TD
-    Internet["🌐 INTERNET"]
-    OPNsense["🔥 OPNsense Firewall/Router<br/>(Security Gateway)"]
-    Proxmox["🖥️ Proxmox Host"]
-    Debian["🐧 Debian VM"]
-    Kali["⚔️ Kali Linux VM"]
-    RasPi1["🍓 Raspberry Pi 1<br/>Pi-hole DNS"]
-    RasPi2["🍓 Raspberry Pi 2<br/>Samba NAS"]
-    Cloudflare["☁️ Cloudflare Tunnel"]
-    
-    Internet --> OPNsense
-    OPNsense --> Proxmox
-    Proxmox --> Debian
-    Proxmox --> Kali
-    Proxmox --> RasPi1
-    Proxmox --> RasPi2
-    Proxmox --> Cloudflare
-    
-    style Internet fill:#FF6B6B,stroke:#C92A2A,color:#fff
-    style OPNsense fill:#FF922B,stroke:#D9480F,color:#fff
-    style Proxmox fill:#4C6EF5,stroke:#364FC7,color:#fff
-    style Debian fill:#A61E4D,stroke:#7D1635,color:#fff
-    style Kali fill:#557C94,stroke:#2D3A47,color:#fff
-    style RasPi1 fill:#A22846,stroke:#6D1938,color:#fff
-    style RasPi2 fill:#A22846,stroke:#6D1938,color:#fff
-    style Cloudflare fill:#F38020,stroke:#D97706,color:#fff
+A secure homelab architecture centered on OPNsense, with NordVPN/WireGuard, Tailscale mesh connectivity, Pi-hole DNS filtering, and Vaultwarden service hosting.
+
+<img src="assets/homelab.svg" alt="Homelab architecture" width="100%" />
+
+*This diagram shows the planned secure homelab topology with OPNsense, VPN, DNS filtering, and Tailscale mesh.*
+
+**Key points:**
+- OPNsense functions as the WAN gateway, VPN killswitch, firewall, DHCP controller, and Tailscale subnet router.
+- Pi-hole handles DNS filtering with Cloudflare/Quad9 upstream resolution.
+- Vaultwarden runs in Docker with Caddy TLS and Crowdsec protection.
+- Tailscale provides secure overlay access for mobile clients, laptops, and remote management.
+
+*Diagram source: `assets/homelab.mmd`.*
+
+```bash
+npm install -g @mermaid-js/mermaid-cli
+mmdc -i assets/homelab.mmd -o assets/homelab.svg
 ```
 
 ---
