@@ -1,10 +1,14 @@
 <p align="center">
-  <img src="images/logo.png" alt="Logo" width="750" />
+  <img src="images/logo.png" alt="Logo" width="500" />
 </p>
 
-### `whoami`
 
+
+<div align="center">
+  <h1><code>whoami</code></h1>
 </div>
+
+
 
 ```bash
 $ cat /etc/profile.d/andro.sh
