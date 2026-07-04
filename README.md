@@ -37,10 +37,10 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 ## Focus Areas
 
 ```
-[■■■■■■■■■░]  Windows Administration
+[■■■■■■■■■ ]  Windows Administration
 [■■■■■■■■░░]  Linux Administration
 [■■■■■■░░░░]  Network Security
-[■■■■■░░░░░]  Homelab & Virtualization
+[■■■■■■░░░░]  Homelab & Virtualization
 [■■■░░░░░░░]  Active Directory (in training)
 [■■■░░░░░░░]  Secure Application Development (Android)
 [■■■░░░░░░░]  Cybersecurity (in progress)
@@ -96,7 +96,7 @@ STATUS="Learning every day | Breaking things | Fixing them better"
 
 A secure homelab architecture centered on OPNsense, with NordVPN/WireGuard, Tailscale mesh connectivity, Pi-hole DNS filtering, and Vaultwarden service hosting.
 
-<img src="assets/homelab.svg" alt="Homelab architecture" width="100%" />
+![Andro Lab — Network Architecture](./assets/andro-lab-network.svg)
 
 *This diagram shows the planned secure homelab topology with OPNsense, VPN, DNS filtering, and Tailscale mesh.*
 
@@ -106,12 +106,7 @@ A secure homelab architecture centered on OPNsense, with NordVPN/WireGuard, Tail
 - Vaultwarden runs in Docker with Caddy TLS and Crowdsec protection.
 - Tailscale provides secure overlay access for mobile clients, laptops, and remote management.
 
-*Diagram source: `assets/homelab.mmd`.*
 
-```bash
-npm install -g @mermaid-js/mermaid-cli
-mmdc -i assets/homelab.mmd -o assets/homelab.svg
-```
 
 ---
 
@@ -121,7 +116,7 @@ mmdc -i assets/homelab.mmd -o assets/homelab.svg
 |---|---|---|
 | [linux-secure-setup](https://github.com/sudoAndro/linux-secure-setup) | Hardening scripts for Debian/Ubuntu | 🟢 Active |
 | [samba-nas-setup](https://github.com/sudoAndro/samba-nas-setup) | Samba NAS with Cloudflare Tunnel | 🟢 Active |
-| [andro-lab](https://github.com/sudoAndro/andro-lab) | Multi-Layer Cybersecurity Homelab | 🟡 In Progress |
+| [andro-lab](https://github.com/sudoAndro/andro-lab) | Multi-Layer Cybersecurity Homelab | 🟢 Active |
 | [proxmox-scripts](https://github.com/sudoAndro/proxmox-scripts) | Automation & setup scripts for Proxmox | 🟢 Active |
 | [linux-starter-kit](https://github.com/sudoAndro/linux-starter-kit) | Aliases, tuning & tips for beginners | 🟢 Active |
 | [windows-starter-kit](https://github.com/sudoAndro/windows-starter-kit) | Automated PowerShell 7 + Terminal setup | 🟢 Active |
@@ -136,6 +131,7 @@ mmdc -i assets/homelab.mmd -o assets/homelab.svg
 - [x] Raspberry Pi – Pi-hole & Samba NAS
 - [x] Cloudflare Tunnel eingerichtet
 - [x] Active Directory – Windows Server (in Ausbildung)
+- [x] VPN-routed network segment (Policy-Based Routing + Kill Switch + Pi-hole DNS)
 - [ ] ICT Supporter SIZ abschliessen
 - [ ] ICT Professional SIZ abschliessen
 - [ ] CompTIA Security+ vorbereiten
