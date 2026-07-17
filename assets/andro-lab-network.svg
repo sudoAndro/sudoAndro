@@ -19,16 +19,17 @@
   <text x="550" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">🌐 Internet</text>
   <text x="550" y="72" text-anchor="middle" font-size="10.5" fill="#6b7280">untrusted by default</text>
 
-  <rect x="810" y="25" width="230" height="60" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="925" y="52" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">🔐 NordVPN</text>
-  <text x="925" y="72" text-anchor="middle" font-size="10.5" fill="#3b82f6">WireGuard tunnel</text>
+  <rect x="810" y="18" width="230" height="76" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="925" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">🔐 NordVPN</text>
+  <text x="925" y="58" text-anchor="middle" font-size="10" fill="#3b82f6">wg0 · WireGuard (default)</text>
+  <text x="925" y="74" text-anchor="middle" font-size="10" fill="#3b82f6">wg1 · WireGuard → Croatia 🇭🇷</text>
 
   <line x1="700" y1="55" x2="806" y2="55" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5,4"/>
   <line x1="555" y1="85" x2="555" y2="144" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arrow)"/>
   <text x="562" y="120" font-size="9.5" fill="#6b7280">WAN</text>
 
-  <path d="M 780 148 L 918 88" stroke="#2563eb" stroke-width="1.8" stroke-dasharray="6,4" fill="none"/>
-  <text x="868" y="130" font-size="9.5" fill="#2563eb">encrypted</text>
+  <path d="M 780 148 L 918 97" stroke="#2563eb" stroke-width="1.8" stroke-dasharray="6,4" fill="none"/>
+  <text x="868" y="132" font-size="9.5" fill="#2563eb">encrypted ×2</text>
 
   <!-- ===================== OPNSENSE ===================== -->
   <rect x="300" y="150" width="520" height="190" rx="12" fill="#fff7ed" stroke="#f97316" stroke-width="2.5"/>
@@ -47,7 +48,7 @@
   <text x="736" y="232" text-anchor="middle" font-size="9.5" fill="#6b7280">filtering</text>
 
   <rect x="320" y="258" width="482" height="40" rx="8" fill="#ffedd5" stroke="#fdba74" stroke-width="1"/>
-  <text x="561" y="283" text-anchor="middle" font-size="11" fill="#7c2d12">Interfaces:&#160;&#160;LAN&#160;&#160;·&#160;&#160;VPNNET&#160;&#160;·&#160;&#160;Tailscale&#160;&#160;·&#160;&#160;NordVPN-WG</text>
+  <text x="561" y="283" text-anchor="middle" font-size="11" fill="#7c2d12">Interfaces:&#160;&#160;LAN&#160;&#160;·&#160;&#160;VPNNET&#160;&#160;·&#160;&#160;Tailscale&#160;&#160;·&#160;&#160;NordVPN-WG (×2)</text>
 
   <!-- Telegram alerts -->
   <rect x="40" y="175" width="200" height="64" rx="10" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1.5"/>
@@ -58,7 +59,7 @@
   <!-- ===================== ARROWS TO ZONES ===================== -->
   <path d="M 430 340 L 430 372 L 200 372 L 200 404" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
   <path d="M 555 340 L 555 404" stroke="#ea580c" stroke-width="1.8" fill="none" marker-end="url(#arrowOrange)"/>
-  <text x="563" y="382" font-size="9.5" fill="#ea580c" font-weight="600">PBR → NordVPN_GW</text>
+  <text x="563" y="382" font-size="9.5" fill="#ea580c" font-weight="600">PBR → NordVPN_HR_GW</text>
   <path d="M 690 340 L 690 372 L 900 372 L 900 404" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
 
   <!-- ===================== ZONE: LAN ===================== -->
@@ -81,7 +82,7 @@
   <!-- ===================== ZONE: VPNNET ===================== -->
   <rect x="400" y="410" width="300" height="245" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
   <text x="550" y="436" text-anchor="middle" font-size="13.5" font-weight="700" fill="#4c1d95">🕶️ VPNNET · 192.168.100.0/24</text>
-  <text x="550" y="452" text-anchor="middle" font-size="9.5" fill="#7c3aed">VPN-routed zone — everything through the tunnel</text>
+  <text x="550" y="452" text-anchor="middle" font-size="9.5" fill="#7c3aed">VPN-routed zone — all traffic exits in Croatia 🇭🇷</text>
 
   <rect x="420" y="465" width="260" height="52" rx="8" fill="#ffffff" stroke="#ede9fe" stroke-width="1.2"/>
   <text x="550" y="486" text-anchor="middle" font-size="12" font-weight="600" fill="#111827">Archer C4000</text>
@@ -89,8 +90,8 @@
 
   <rect x="420" y="527" width="260" height="62" rx="8" fill="#ffffff" stroke="#ede9fe" stroke-width="1.2"/>
   <text x="550" y="547" text-anchor="middle" font-size="12" font-weight="600" fill="#111827">📶 VPN-WLAN</text>
-  <text x="550" y="563" text-anchor="middle" font-size="9.5" fill="#6b7280">connect WiFi = 100% NordVPN</text>
-  <text x="550" y="578" text-anchor="middle" font-size="9.5" fill="#6b7280">no apps needed</text>
+  <text x="550" y="563" text-anchor="middle" font-size="9.5" fill="#6b7280">connect WiFi = 100% NordVPN 🇭🇷</text>
+  <text x="550" y="578" text-anchor="middle" font-size="9.5" fill="#6b7280">no apps · country = one dropdown</text>
 
   <rect x="420" y="599" width="260" height="42" rx="8" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.2"/>
   <text x="550" y="616" text-anchor="middle" font-size="10" font-weight="600" fill="#5b21b6">tunnel down → kill switch</text>
@@ -121,7 +122,7 @@
   <rect x="40" y="685" width="1020" height="105" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
   <text x="60" y="711" font-size="13" font-weight="700" fill="#111827">🧅 Defense in depth — five independent security layers</text>
 
-  <text x="60" y="734" font-size="10.5" fill="#374151"><tspan font-weight="700">1 · NordVPN</tspan> — encrypts traffic, hides home IP</text>
+  <text x="60" y="734" font-size="10.5" fill="#374151"><tspan font-weight="700">1 · NordVPN</tspan> — 2× WireGuard (default + 🇭🇷 Croatia), hides home IP</text>
   <text x="60" y="754" font-size="10.5" fill="#374151"><tspan font-weight="700">2 · Kill switch</tspan> — tunnel down = zero traffic, zero leak</text>
   <text x="60" y="774" font-size="10.5" fill="#374151"><tspan font-weight="700">3 · Pi-hole</tspan> — DNS filtering: ads, trackers, malware</text>
 

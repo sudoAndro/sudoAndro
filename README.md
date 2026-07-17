@@ -132,6 +132,7 @@ A secure homelab architecture centered on OPNsense, with NordVPN/WireGuard, Tail
 - [x] Cloudflare Tunnel eingerichtet
 - [x] Active Directory – Windows Server (in Ausbildung)
 - [x] VPN-routed network segment (Policy-Based Routing + Kill Switch + Pi-hole DNS)
+- [x] Multi-country VPN gateways (parallel WireGuard tunnels)
 - [ ] ICT Supporter SIZ abschliessen
 - [ ] ICT Professional SIZ abschliessen
 - [ ] CompTIA Security+ vorbereiten
